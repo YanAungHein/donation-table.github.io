@@ -1,0 +1,109 @@
+
+.category-image {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+ }
+ 
+  .category-image img {
+  width: 320px;
+  height:240px;
+ }
+ 
+ .category-image .primary-overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff6600;
+  opacity: .85;
+  transition: .3s ease;
+ }
+ 
+ .category-image .primary-overlay h5,
+ .category-image .primary-overlay p,
+ .category-image .primary-overlay i {
+  color: #fff;
+ }
+ 
+ .category-image .primary-overlay h5,
+ .category-image .primary-overlay p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+ }
+ 
+ .category-image .primary-overlay h5 {
+  padding-top: 25%;
+  margin-bottom: 10px;
+ }
+ 
+ .category-image .primary-overlay h5, 
+ .category-image .primary-overlay ul, 
+ .category-image .primary-overlay p {
+  transition: .7s ease;
+  -webkit-transform: translate(0, 30px);
+          transform: translate(0, 30px);
+  opacity: 0;
+ }
+ 
+ .category-image .primary-overlay p {
+  margin-bottom: 10px;
+ }
+ 
+ .category-image .primary-overlay ul .list-inline-item:not(:last-child) {
+  margin-right: 10px;
+ }
+ 
+ .category-image:hover .primary-overlay {
+  top: 0;
+ }
+ 
+ .category-image:hover .primary-overlay h5, 
+ .category-image:hover .primary-overlay p, 
+ .category-image:hover .primary-overlay ul {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+ }
+ 
+.slick-prev {
+ left: 40px;
+}
+
+.slick-prev:before {
+ content: '\f104';
+}
+
+.slick-next {
+ right: 40px;
+}
+
+.slick-next:before {
+ content: '\f105';
+}
+
+.slick-prev, 
+.slick-next {
+ background: #fff;
+ width: 70px;
+ height: 70px;
+ border-radius: 100%;
+ z-index: 100;
+}
+
+.slick-prev:hover:before, 
+.slick-next:hover:before {
+ color: #ff6600;
+}
+
+.slick-prev:before,
+.slick-next:before {
+ color: #ff6600;
+ font-family: FontAwesome;
+}
+
+.slick-dots
+{
+    bottom:-50px;
+}
